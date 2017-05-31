@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CourseWork</title>
+  </head>
+  <body>
+    <h2>Add a New Course</h2>
+    <form method="POST"action="/add">
+      {% csrf_token %}
+      Name :<input type="text" name="name" placeholder="Case Sensitive">
+      Description:<input type="text" name="description" placeholder="Keep it short..">
+      <button type="button"class="submit" name="add">Add</button>
+      <h2>Courses</h2>
+      <h3>Course name/Description/Date added</h3>
+      <p>{{name}} {{description}}</p>
+    </form>
+
+
+
+
+
+  </body>
+</html>
